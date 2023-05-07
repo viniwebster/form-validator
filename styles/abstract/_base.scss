@@ -1,0 +1,21 @@
+@import './variaveis';
+
+body{
+    font-family: $primary-font;
+    label{
+            text-transform: uppercase;
+            color: $secundary-neutral-color;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+}
+
+@mixin borderInput(){
+    padding: .8rem;
+    border-radius: 10px;
+    border-color: $primary-neutral-color;
+    outline-color: $terciary-neutral-color;
+    border-style: solid;
+    box-sizing: border-box;
+}
+

@@ -1,0 +1,103 @@
+@import '../abstract/base';
+
+main{
+    display: flex;
+    height: 100vh;
+    .cards{
+        background-image: linear-gradient(hsl(278, 94%, 30%), hsl(278, 68%, 11%));
+        .front{
+            position: relative;
+            left: 25%;
+            top: 20%;
+        }
+        .card__container{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            color: $white;
+            background: url('../../images/bg-card-front.png') center no-repeat;
+            background-size: contain;
+            padding: 2rem;
+            box-sizing: border-box;
+            width: 400px;
+            height: 230px;
+            border-radius: 10px;
+            
+            .card__number{
+                font-size: 1.25rem;
+                letter-spacing: 3px;
+                font-weight: 700;
+                font-family: $primary-font;
+            }
+            .card__name-container{
+                display: flex;
+                justify-content: space-between;
+                font-size: 1rem;
+                .name{
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+            }
+            
+        }
+
+        .back{
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            background: url('../../images/bg-card-back.png') center no-repeat;
+            background-size: contain;
+            position: relative;
+            top: 25%;
+            left: 50%;
+            #card-cvc{
+                margin-right: 10px;
+            }
+        }
+
+    }
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+/*     min-height: 100vh; */
+    .form__container{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 50% 50%;
+        gap: 30px;
+        width: 40%; 
+        .error{
+            color: $secundary-color;
+        }    
+        .name{
+            grid-column: 1/3;
+        }
+
+        .number{
+            grid-column: 1/3;
+        }
+
+        input{
+            width: 100%;
+            @include borderInput;
+        }
+        
+        .btn{
+            @include borderInput();
+            background-color: $terciary-neutral-color;
+            color: $white;
+            font-size: 1rem;
+            margin-top: 20px;
+            grid-column: 1/3;
+            cursor: pointer;
+            &:hover{
+                background-color: hsl(276, 72%, 17%);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+@import '../abstract/base';
+@import '../abstract/variaveis';
+
+.container{
+    .checked__container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 50%;
+        gap: 40px;
+        text-align: center;
+        .title{
+            text-transform: uppercase;
+            font-size: 2rem;
+            color: $terciary-neutral-color;
+        }
+        .subtitle{
+            font-size: 1.1rem;
+            color: $secundary-neutral-color;
+        }
+        .btn{
+            @include borderInput();
+            width: 60%;
+            text-align: center;
+            text-decoration: none;
+            background-color: $terciary-neutral-color;
+            color: $white;
+            font-size: 1rem;
+            margin-top: 20px;
+            grid-column: 1/3;
+            cursor: pointer;
+            &:hover{
+                background-color: hsl(276, 72%, 17%);
+            }
+        }
+    }
+}

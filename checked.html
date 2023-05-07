@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+    integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./styles/components/style.css">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+
+  <main>
+
+  <section class="cards">
+    <div class="card__container front">
+      <div class="card__logo">
+        <div> <img class="logo"src="./images/card-logo.svg" alt="card logo" srcset=""> </div>
+        <div class="logo__circle"></div>
+      </div>
+
+      <div class="card__number"><span id="card">0000 1111 2222 3333</span></div>
+        <div class="card__name-container">
+          <div class="name"><span id="card-name">Jane Appleseed</span></div>
+          <div class="date"><span id="card-exp">00/00</span></div>
+        </div>
+    </div>
+
+
+    <div class="card__container back">
+      <div class="card__verse-number"><span id="card-cvc">000</span></div>
+    </div>
+  </section>
+
+  <section class="container">
+    
+        <div class="checked__container">
+            <img src="./images/icon-complete.svg" alt="Complete" srcset="">
+
+            <h1 class="title">Thank you!</h1>
+            <p class="subtitle">We've added your card details</p>
+            
+            <a href="./index.html" class="btn">Continue</a>
+        </div>    
+    
+  </section>
+  
+  </main>
+
+<!--   <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="/scripts/script.js"></script>
+  <script src="/scripts/cardInfosChecked.js"></script>
+</body>
+</html>
