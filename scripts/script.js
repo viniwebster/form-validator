@@ -100,15 +100,3 @@ function addCardContent(field) {
     }
 
 }
-
-/* const cardNameChecked = document.getElementById('card-name-checked');
-const cardNumberChecked = document.getElementById('card-checked');
-const cardExpChecked = document.getElementById('card-exp-checked');
-const cardCvcChecked = document.getElementById('card-cvc-checked');
-
-const response = JSON.parse(localStorage.getItem('informations'));
-
-cardNameChecked.textContent = response.name;
-cardNumberChecked.textContent = response.number;
-cardExpChecked.textContent = response.month;
-cardCvcChecked.textContent = response.cvc; */
